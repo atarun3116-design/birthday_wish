@@ -3,34 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday ❤️</title>
+  <title>Happy Birthday 🎂</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container" id="mainPage">
-    <h1>🎂 Happy Birthday My Love ❤️</h1>
-    <h2>Will you go on a birthday date with me? 😘</h2>
 
-    <div class="btn-box">
+  <div class="card" id="page1">
+    <h1>🎉 Hey Bestieee 😄</h1>
+    <p>I made something special for you 💖</p>
+
+    <button id="startBtn">Start 🎁</button>
+  </div>
+
+  <div class="card hidden" id="page2">
+    <img src="friend.jpg" class="photo" alt="Birthday Friend">
+    <h1>🎂 Happy Birthday <span id="YASHASWINI">Friend</span> ❤️</h1>
+    <h2>You are now <span id="age">19</span> years old 😎✨</h2>
+
+    <p class="msg">
+      You are one of the best people I’ve ever met 🤍 <br>
+      Stay happy, stay strong, and keep shining ✨ <br>
+      Today is your day, enjoy it fully 🎉
+    </p>
+
+    <p class="small">Click YES for your surprise 😁</p>
+
+    <div class="buttons">
       <button id="yesBtn">YES 😍</button>
       <button id="noBtn">NO 🙄</button>
     </div>
   </div>
 
-  <div class="container hidden" id="yesPage">
-    <h1>YAYYYYY!!! 😭❤️</h1>
-    <h2>You made my day ❤️</h2>
-    <p>
-      Happy Birthday my love 🎂💖 <br>
-      You are the most special person in my life 🥺❤️ <br>
-      I love you so much 😘✨
+  <div class="card hidden" id="page3">
+    <h1>🎆 Surprise Time 🎆</h1>
+    <p class="finalmsg">
+      You are not just a friend… <br>
+      You are a special part of my life 💛 <br><br>
+      Always keep smiling 😄✨ <br>
+      Happy Birthday once again 🎂🎉
     </p>
 
-    <h3>🎁 Surprise for you: 💐💍💖</h3>
-    <p class="from">- From Tarun 😘❤️</p>
+    <h2>🎁 Gift Loading... 💝</h2>
+    <p class="from">- From Tarun 😎</p>
 
-    <div class="hearts"></div>
+    <canvas id="confetti"></canvas>
   </div>
 
   <script src="script.js"></script>
